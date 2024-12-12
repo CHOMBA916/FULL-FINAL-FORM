@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Registration Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Business Registration Form</h2>
+    <form action="#">
+      <div class="form-group">
+        <label for="business-name">Business Name</label>
+        <input type="text" id="business-name" name="business-name" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="owner-name">Owner's Name</label>
+        <input type="text" id="owner-name" name="owner-name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Business Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Business Address</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="business-type">Business Type</label>
+        <select id="business-type" name="business-type" required>
+          <option value="sole-proprietorship">Sole Proprietorship</option>
+          <option value="partnership">Partnership</option>
+          <option value="llc">LLC</option>
+          <option value="corporation">Corporation</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="registration-date">Registration Date</label>
+        <input type="date" id="registration-date" name="registration-date" required>
+      </div>
+
+      <div class="form-group">
+        <label for="documents">Upload Business Documents</label>
+        <input type="file" id="documents" name="documents" required>
+      </div>
+
+      <div class="form-group">
+        <button type="submit">Register Business</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
